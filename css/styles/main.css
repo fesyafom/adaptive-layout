@@ -4,14 +4,21 @@
     overflow: hidden;
 }
 
-.banner_area {
-    background-image: url('../../images/banner_area.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 934px;
-    margin: 0 auto;
-    position: relative;
+.header {
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    top: -120px;
+    transition: top 0.5s ease-out 0.1s;
+}
+
+.header:hover {
+    top: 0;
+}
+
+.header__show {
+    height: 200px;
+    opacity: 0;
 }
 
 .header-main {
@@ -104,34 +111,124 @@
     color: white;
 }
 
+.search_tours {
+    box-sizing: border-box;
+    position: fixed;
+    top: 215px;
+    right: 226px;
+    height: 600px;
+    width: 509px;
+    background-color: white;
+    z-index: 20;
+    padding: 40px;
+}
+
+.search_tours__title {
+    color: rgb(96, 96, 96);
+    font-family: 'BigNoodleTitling',Sans-Serif;
+    font-size: 70px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.search_tours__text {
+    color: rgb(96, 96, 96);
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 27px 0;
+    text-align: center;
+    line-height: 20px;
+}
+
+.search_tours-block {
+    width: 425px;
+    height: 55px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 5px;
+    margin-bottom: 23px;
+}
+
+.search_tours-block__input {
+    color: rgb(96, 96, 96);
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    border: 0;
+    box-sizing: border-box;
+    float: left;
+    line-height: 45px;
+    width: 376px;
+    height: 55px;
+    background-color: rgba(255,255,255,0);
+    text-indent: 14px;
+}
+
+.search_tours-block__icon {
+    display: block;
+    float: left;
+    color: rgb(96, 96, 96);
+    font-family: 'BigNoodleTitling',Sans-Serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 55px;
+}
+
+.search_tours__submit {
+    box-sizing: border-box;
+    width: 425px;
+    height: 55px;
+    background-color: rgb(0, 111, 230);
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 55px;
+    padding: 0;
+    border-style: hidden;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.banner_area {
+    background-image: url('../../images/banner_area.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 934px;
+    margin: 0 auto;
+    position: relative;
+}
+
 .banner_area__title {
     color: white;
-    font-family: 'Conv_big_noodle_titling',Sans-Serif;
+    font-family: 'BigNoodleTitling',Sans-Serif;
     font-size: 62px;
     font-weight: 400;
-    margin: 302px 0 230px 0;
+    margin: 302px 0 30px 0;
     text-transform: uppercase;
 }
 
 .banner_area__main_text {
-    margin: 0 0 33px 90px;
+    margin: 0 0 0 90px;
     width: 494px;
     color: white;
     font-family: "Open Sans";
     font-size: 30px;
     font-weight: 400;
-    z-index: 20;
     position: relative;
 }
 
 .banner_area__text {
-    margin-left: 23px;
+    margin: 72px 0 0 23px;
     width: 567px;
     color: white;
     font-family: "Open Sans";
     font-size: 20px;
     font-weight: 400;
-    z-index: 20;
     position: relative;
 }
 
@@ -141,7 +238,6 @@
     height: 204px;
     width: 100%;
     background-color: rgba(71, 160, 255,.85);
-    z-index: 1;
 }
 
 .tour_type_area {
@@ -155,7 +251,7 @@
 
 .tour_type_area__title {
     color: rgb(96, 96, 96);
-    font-family: 'Conv_big_noodle_titling',Sans-Serif;
+    font-family: 'BigNoodleTitling',Sans-Serif;
     font-size: 50px;
     font-weight: 400;
     text-align: center;
@@ -195,7 +291,7 @@
 
 .tour_type_area-list-item__title {
     color: white;
-    font-family: 'Conv_big_noodle_titling',Sans-Serif;
+    font-family: 'BigNoodleTitling',Sans-Serif;
     font-size: 34px;
     font-weight: 400;
     line-height: 266px;
@@ -220,7 +316,7 @@
 
 .deals_and_discounts__title {
     color: rgb(255, 255, 255);
-    font-family: 'Conv_big_noodle_titling',Sans-Serif;
+    font-family: 'BigNoodleTitling',Sans-Serif;
     font-size: 50px;
     font-weight: 400;
     text-align: center;
@@ -249,7 +345,7 @@
 
 .deals_and_discounts-list-item__title {
     color: rgb(96, 96, 96);
-    font-family: 'Conv_big_noodle_titling',Sans-Serif;
+    font-family: 'BigNoodleTitling',Sans-Serif;
     font-size: 50px;
     font-weight: 400;
     text-align: center;
@@ -298,7 +394,7 @@
 
 .prise {
     color: white;
-    font-family: 'Conv_big_noodle_titling',Sans-Serif;
+    font-family: 'BigNoodleTitling',Sans-Serif;
     font-weight: 400;
     font-size: 37px;
     line-height: 56px;
@@ -306,7 +402,7 @@
 
 .old_prise {
     color: white;
-    font-family: 'Conv_big_noodle_titling',Sans-Serif;
+    font-family: 'BigNoodleTitling',Sans-Serif;
     font-weight: 400;
     font-size: 30px;
     text-decoration: line-through;
@@ -315,13 +411,14 @@
 
 .find_trip_area {
     height: 1076px;
+    overflow: hidden;
 }
 
 .find_trip_area__title {
     margin: 116px 0 106px 0;
     text-transform: uppercase;
     color: rgb(96, 96, 96);
-    font-family: 'Conv_big_noodle_titling',Sans-Serif;
+    font-family: 'BigNoodleTitling',Sans-Serif;
     font-size: 50px;
     font-weight: 400;
     text-align: center;
@@ -400,11 +497,12 @@
 .news_area {
     height: 905px;
     background-color: white;
+    padding-top: 1px;
 }
 
 .news_area__title {
     color: rgb(53, 53, 53);
-    font-family: 'Conv_big_noodle_titling',Sans-Serif;
+    font-family: 'BigNoodleTitling',Sans-Serif;
     font-size: 50px;
     font-weight: 400;
     text-align: center;
@@ -494,7 +592,7 @@
 .bottom_banner__title {
     margin: 200px 0 26px 0;
     color: white;
-    font-family: 'Conv_big_noodle_titling',Sans-Serif;
+    font-family: 'BigNoodleTitling',Sans-Serif;
     font-size: 148px;
     font-weight: 400;
     line-height: 108px;
@@ -503,7 +601,7 @@
 
 .bottom_banner__subtitle {
     color: white;
-    font-family: 'Conv_big_noodle_titling',Sans-Serif;
+    font-family: 'BigNoodleTitling',Sans-Serif;
     font-size: 50px;
     font-weight: 400;
     text-align: center;
@@ -526,47 +624,127 @@
     text-decoration: none;
 }
 
-.footer {
-    height: 397px;
+.about_company {
+    height: 332px;
 }
 
-.footer-find_finder {
+.about_company-find_finder {
     box-sizing: border-box;
     width: 362px;
     float:left;
     padding: 11px;
 }
 
-.footer__title {
+.about_company__title {
     color: rgb(96, 96, 96);
-    font-family: 'Conv_big_noodle_titling',Sans-Serif;
+    font-family: 'BigNoodleTitling',Sans-Serif;
     font-size: 30px;
     font-weight: 400;
     margin: 77px 0 47px 0;
 }
 
-.footer-support {
+.about_company-support {
     box-sizing: border-box;
     width: 235px;
     float:left;
     padding: 11px;
 }
 
-.footer-follow {
+.about_company-follow {
     box-sizing: border-box;
     width: 293px;
     float:left;
     padding: 11px;
 }
-.footer-newsletter {
+.about_company-newsletter {
     box-sizing: border-box;
     width: 272px;
     float:left;
     padding: 11px;
 }
 
-.footer__bottom {
-    clear: both;
+.about_company__contacts {
+    color: rgb(96, 96, 96);
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 13px;
+}
+
+.about_company__more_info {
+    color: rgb(96, 96, 96);
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 13px;
+    display: block;
+    text-decoration: none;
+}
+
+
+.about_company__social {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    list-style-type: none;
+    background-color: rgb(71, 160, 255);
+    text-align: center;
+    line-height: 44px;
+    text-decoration: none;
+    color: white;
+    font-family: 'BigNoodleTitling',Sans-Serif;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    float: left;
+    margin: 0 11px 11px 0;
+}
+
+.about_company-subscription {
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgb(242, 242, 242);
+    border-radius: 5px;
+    height: 55px;
+    width: 274px;
+    padding: 5px;
+}
+
+.about_company-subscription__email {
+    border: 0;
+    box-sizing: border-box;
+    float: left;
+    color: rgb(96, 96, 96);
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 45px;
+    width: 188px;
+    height: 45px;
+    background-color: rgba(255,255,255,0);
+    text-indent: 14px;
+
+}
+
+.about_company-subscription__submit {
+    box-sizing: border-box;
+    float:right;
+    width: 76px;
+    height: 45px;
+    background-color: rgb(0, 111, 230);
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 45px;
+    padding: 0;
+    border-style: hidden;
+    cursor: pointer;
+}
+
+.footer {
     border-top: 1px solid rgb(208,208,208);
     padding: 23px 0 30px 5px;
     color: rgb(96, 96, 96);
@@ -574,3 +752,4 @@
     font-size: 13px;
     font-weight: 400;
 }
+

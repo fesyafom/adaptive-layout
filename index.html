@@ -11,72 +11,98 @@
 </head>
 <body>
 
+<header class="header">
+    <article class="header-main">
+        <div class="container">
+            <ul class="header-contacts">
+                <li class="header-contacts-item">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <a class="header-contacts__link" href="tel:+1 420-000-6000">+1 420-000-6000</a>
+                </li>
+                <li class="header-contacts-item">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a class="header-contacts__link" href="mailto:hello@website.com">hello@website.com</a>
+                </li>
+                <li class="header-contacts-item">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <span class="header-contacts__link">6am - 11pm</span>
+                </li>
+            </ul>
+
+            <div class="header-search">
+                <a class="header-search__link" id="toggleSearchForm" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+
+            <ul class="header-social">
+                <li class="header-social-item">
+                    <a class="header-social__link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li class="header-social-item">
+                    <a class="header-social__link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li class="header-social-item">
+                    <a class="header-social__link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li class="header-social-item">
+                    <a class="header-social__link" href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                </li>
+                <li class="header-social-item">
+                    <a class="header-social__link" href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </article>
+    <article class="header-nav">
+        <div class="container">
+            <a class="logo" href="#"><img src="images/logo.png"></a>
+
+            <nav class="navigation">
+                <a class="navigation__link" href="#">Home</a>
+                <a class="navigation__link" href="#">Blog</a>
+                <a class="navigation__link" href="#">Gallery</a>
+                <a class="navigation__link" href="#">Activities</a>
+                <a class="navigation__link" href="#">Deals</a>
+                <a class="navigation__link" href="#">Contact</a>
+            </nav>
+        </div>
+    </article>
+    <div class="header__show">
+
+    </div>
+</header>
+
+<form class="search_tours" id="searchTours">
+    <h2 class="search_tours__title">Search Tours</h2>
+    <p class="search_tours__text">Find your dream tour today!</p>
+    <div class="search_tours-block">
+        <input class="search_tours-block__input" type="text" placeholder="Search Tour">
+        <span class="search_tours-block__icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+    </div>
+    <div class="search_tours-block">
+        <input class="search_tours-block__input" type="text" placeholder="Destenation">
+        <span class="search_tours-block__icon"><i class="fa fa-plane" aria-hidden="true"></i></span>
+    </div>
+    <div class="search_tours-block">
+        <input class="search_tours-block__input" type="text" placeholder="Tour Type">
+        <span class="search_tours-block__icon"><i class="fa fa-bed" aria-hidden="true"></i></span>
+    </div>
+    <div class="search_tours-block">
+        <input class="search_tours-block__input" type="text" placeholder="Month">
+        <span class="search_tours-block__icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+    </div>
+    <input class="search_tours__submit" type="submit" value="find tours">
+</form>
+
 <section class="banner_area">
-    <header class="header">
-        <article class="header-main">
-            <div class="container">
-                <ul class="header-contacts">
-                    <li class="header-contacts-item">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <a class="header-contacts__link" href="tel:+1 420-000-6000">+1 420-000-6000</a>
-                    </li>
-                    <li class="header-contacts-item">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <a class="header-contacts__link" href="mailto:hello@website.com">hello@website.com</a>
-                    </li>
-                    <li class="header-contacts-item">
-                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                        <span class="header-contacts__link">6am - 11pm</span>
-                    </li>
-                </ul>
-
-                <div class="header-search">
-                    <a class="header-search__link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-                </div>
-
-                <ul class="header-social">
-                    <li class="header-social-item">
-                        <a class="header-social__link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    </li>
-                    <li class="header-social-item">
-                        <a class="header-social__link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    </li>
-                    <li class="header-social-item">
-                        <a class="header-social__link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    </li>
-                    <li class="header-social-item">
-                        <a class="header-social__link" href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                    </li>
-                    <li class="header-social-item">
-                        <a class="header-social__link" href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-                    </li>
-                </ul>
-
-            </div>
-        </article>
-        <article class="header-nav">
-            <div class="container">
-                <a class="logo" href="#"><img src="images/logo.png"></a>
-
-                <nav class="navigation">
-                    <a class="navigation__link" href="#">Home</a>
-                    <a class="navigation__link" href="#">Blog</a>
-                    <a class="navigation__link" href="#">Gallery</a>
-                    <a class="navigation__link" href="#">Activities</a>
-                    <a class="navigation__link" href="#">Deals</a>
-                    <a class="navigation__link" href="#">Contact</a>
-                </nav>
-            </div>
-        </article>
-    </header>
-
     <div class="container">
         <h2 class="banner_area__title">Where your journey begins.</h2>
         <p class="banner_area__main_text">Discover your next great adventure, become an explorer to get started!</p>
-        <p class="banner_area__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies erat mollis metus molestie, quis porta nunc finibus. Phasellus in nibh libero.</p>
     </div>
 
     <div class="banner_area__bottom">
+        <div class="container">
+            <p class="banner_area__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies erat mollis metus molestie, quis porta nunc finibus. Phasellus in nibh libero.</p>
+        </div>
     </div>
 </section>
 
@@ -226,27 +252,44 @@
     <a class="bottom_banner__find_tours" href="#">Find Tours</a>
 </section>
 
+<section class="about_company">
+    <div class="container">
+        <article class="about_company-find_finder">
+            <h2 class="about_company__title">Findfinder LLC</h2>
+            <p class="about_company__contacts">1400 Pennsylvania Ave. Washington, DC</p>
+            <p class="about_company__contacts">P: 24/7 customer support: 1-555-555-5555</p>
+            <p class="about_company__contacts">E: info@tripfinder.com</p>
+        </article>
+        <article class="about_company-support">
+            <h2 class="about_company__title">support</h2>
+            <a href="#" class="about_company__more_info">Faq</a>
+            <a href="#" class="about_company__more_info">Payment options</a>
+            <a href="#" class="about_company__more_info">Booking tips</a>
+        </article>
+        <article class="about_company-follow">
+            <h2 class="about_company__title">Follow us</h2>
+            <a href="#" class="about_company__social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#" class="about_company__social"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" class="about_company__social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" class="about_company__social"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+        </article>
+        <article class="about_company-newsletter">
+            <h2 class="about_company__title">Newsletter</h2>
+            <form action="#" class="about_company-subscription" novalidate>
+                <input class="about_company-subscription__email" type="email" placeholder="Enter Email">
+                <input class="about_company-subscription__submit" type="submit" value="submit">
+            </form>
+        </article>
+    </div>
+</section>
+
 <footer class="footer">
     <div class="container">
-        <article class="footer-find_finder">
-            <h2 class="footer__title">Findfinder LLC</h2>
-        </article>
-        <article class="footer-support">
-            <h2 class="footer__title">support</h2>
-        </article>
-        <article class="footer-follow">
-            <h2 class="footer__title">Follow us</h2>
-        </article>
-        <article class="footer-newsletter">
-            <h2 class="footer__title">Newsletter</h2>
-        </article>
-    </div>
-    <div class="footer__bottom">
         © PSDfreebies.com 2015. All rights reserved.
     </div>
-
-
 </footer>
 
+
+<script src="js/scripts/scripts.js"></script>
 </body>
 </html>
