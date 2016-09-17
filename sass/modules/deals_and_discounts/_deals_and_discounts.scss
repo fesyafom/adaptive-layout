@@ -1,18 +1,13 @@
 .deals_and_discounts {
-  background-image: url('../../images/deals_and_discounts.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  @include bg_image('deals_and_discounts.jpg');
   height: 880px;
   margin: 0 auto;
   position: relative;
   padding-top: 118px;
 
   &__title {
+    font: $norm 50px $bigNoodleTitling;
     color: $white;
-    font-family: $bigNoodleTitling;
-    font-size: 50px;
-    font-weight: $norm;
     text-align: center;
     margin: 0 0 77px 0;
   }
@@ -37,42 +32,24 @@
       }
 
       &__title {
+        font: $norm 50px $bigNoodleTitling;
         color: $gray;
-        font-family: $bigNoodleTitling;
-        font-size: 50px;
-        font-weight: $norm;
         text-align: center;
         margin: 54px 0 26px 0;
         line-height: 38px;
       }
 
       &__text {
+        font: $norm 15px $sans;
         color: $gray;
-        font-family: $sans;
-        font-size: 15px;
-        font-weight: $norm;
         margin: 0 16px 40px 44px;
       }
 
       &__button {
-        display: block;
+        @include rect_button(55px,$dark_blue,$sans,$white,16px,$bold);
         width: 199px;
-        height: 55px;
-        background-color: $dark_blue;
-        border-radius: 5px;
-        text-align: center;
-        text-decoration: none;
         margin: 0 auto;
-
-        &__title {
-          color: $white;
-          font-family: $sans;
-          font-size: 16px;
-          font-weight: $bold;
-          line-height: 55px;
-          text-transform: uppercase;
-          letter-spacing: 1px;
-        }
+        letter-spacing: 1px;
       }
 
       &__prise {
@@ -91,18 +68,14 @@
 }
 
 .prise {
+  font: $norm 37px $bigNoodleTitling;
   color: $white;
-  font-family: $bigNoodleTitling;
-  font-weight: $norm;
-  font-size: 37px;
   line-height: 56px;
 }
 
 .old_prise {
+  font: $norm 30px $bigNoodleTitling;
   color: $white;
-  font-family: $bigNoodleTitling;
-  font-weight: $norm;
-  font-size: 30px;
   text-decoration: line-through;
   margin-right: 15px;
 }

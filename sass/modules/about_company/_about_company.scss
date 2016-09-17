@@ -9,10 +9,8 @@
   }
 
   &__title {
+    font: $norm 30px $bigNoodleTitling;
     color: $gray;
-    font-family: $bigNoodleTitling;
-    font-size: 30px;
-    font-weight: $norm;
     margin: 77px 0 47px 0;
   }
 
@@ -38,37 +36,22 @@
   }
 
   &__contacts {
+    font: $norm 15px $sans;
     color: $gray;
-    font-family: $sans;
-    font-size: 15px;
-    font-weight: $norm;
     margin-bottom: 13px;
   }
 
   &__more_info {
+    font: $norm 15px $sans;
     color: $gray;
-    font-family: $sans;
-    font-size: 15px;
-    font-weight: $norm;
     margin-bottom: 13px;
     display: block;
     text-decoration: none;
   }
 
   &__social {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+    @include crcl_button(44px,$blue,$bigNoodleTitling,$white,16px,$norm);
     list-style-type: none;
-    background-color: $blue;
-    text-align: center;
-    line-height: 44px;
-    text-decoration: none;
-    color: $white;
-    font-family: $bigNoodleTitling;
-    font-size: 16px;
-    font-weight: $norm;
-    display: block;
     float: left;
     margin: 0 11px 11px 0;
   }
@@ -86,10 +69,8 @@
       border: 0;
       box-sizing: border-box;
       float: left;
+      font: $norm 13px $sans;
       color: $gray;
-      font-family: $sans;
-      font-size: 13px;
-      font-weight: $norm;
       line-height: 45px;
       width: 67%;
       height: 45px;
@@ -98,21 +79,9 @@
     }
 
     &__submit {
-      box-sizing: border-box;
+      @include rect_button(45px,$dark_blue,$sans,$white,14px,$bold);
       float:right;
       width: 28%;
-      height: 45px;
-      background-color: $dark_blue;
-      border-radius: 5px;
-      text-transform: uppercase;
-      color: $white;
-      font-family: $sans;
-      font-size: 14px;
-      font-weight: $bold;
-      line-height: 45px;
-      padding: 0;
-      border-style: hidden;
-      cursor: pointer;
     }
   }
 }

@@ -4,20 +4,16 @@
   padding-top: 100px;
 
   &__title {
+    font: $norm 50px $bigNoodleTitling;
     color: $dark_gray;
-    font-family: $bigNoodleTitling;
-    font-size: 50px;
-    font-weight: $norm;
     text-align: center;
     letter-spacing: 2px;
     margin: 0 0 50px 0;
   }
 
   &__text {
+    font: $norm 20px $sans;
     color: $dark_gray;
-    font-family: $sans;
-    font-size: 20px;
-    font-weight: $norm;
     text-align: center;
     width: 82%;
     margin: 0 auto 59px auto;
@@ -46,10 +42,8 @@
 
       &__link {
         text-decoration: none;
+        font: $bold 18px $sans;
         color: $blue;
-        font-family: $sans;
-        font-size: 18px;
-        font-weight: $bold;
         margin: 0 13px 28px 13px;
         display: block;
       }
@@ -64,20 +58,16 @@
         }
 
         &__info {
+          font: $norm 15px $sans;
           color: $gray;
-          font-family: $sans;
-          font-size: 15px;
-          font-weight: $norm;
           margin: 0 60px 0 8px;
         }
       }
 
       &__text {
         margin: 0 13px;
+        font: $norm 15px $sans;
         color: $gray;
-        font-family: $sans;
-        font-size: 15px;
-        font-weight: $norm;
       }
     }
   }

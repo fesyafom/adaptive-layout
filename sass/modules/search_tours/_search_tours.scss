@@ -10,19 +10,15 @@
   padding: 40px;
 
   &__title {
+    font: $norm 70px $bigNoodleTitling;
     color: $gray;
-    font-family: $bigNoodleTitling;
-    font-size: 70px;
-    font-weight: $norm;
     text-align: center;
     margin: 0 0 20px 0;
   }
 
   &__text {
+    font: $norm 20px $sans;
     color: $gray;
-    font-family: $sans;
-    font-size: 20px;
-    font-weight: $norm;
     margin: 0 0 27px 0;
     text-align: center;
     line-height: 20px;
@@ -36,10 +32,8 @@
     margin-bottom: 23px;
 
     &__input {
+      font: $norm 16px $sans;
       color: $gray;
-      font-family: $sans;
-      font-size: 16px;
-      font-weight: $norm;
       border: 0;
       box-sizing: border-box;
       float: left;
@@ -53,29 +47,15 @@
     &__icon {
       display: block;
       float: left;
+      font: $norm 20px $bigNoodleTitling;
       color: $gray;
-      font-family: $bigNoodleTitling;
-      font-size: 20px;
-      font-weight: $norm;
       line-height: 55px;
     }
   }
 
   &__submit {
-    box-sizing: border-box;
+    @include rect_button(55px,$blue,$sans,$white,16px,$bold);
     width: 100%;
-    height: 55px;
-    background-color: $blue;
-    border-radius: 5px;
-    text-transform: uppercase;
-    color: $white;
-    font-family: $sans;
-    font-size: 16px;
-    font-weight: $bold;
-    line-height: 55px;
-    padding: 0;
-    border-style: hidden;
-    cursor: pointer;
     margin: 0 auto;
   }
 }

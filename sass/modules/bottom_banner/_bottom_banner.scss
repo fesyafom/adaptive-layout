@@ -1,8 +1,5 @@
 .bottom_banner {
-  background-image: url('../../images/bottom-banner.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  @include bg_image('bottom-banner.jpg');
   height: 800px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -10,36 +7,20 @@
 
   &__title {
     margin: 0 0 26px 0;
+    font: $norm 148px $bigNoodleTitling;
     color: $white;
-    font-family: $bigNoodleTitling;
-    font-size: 148px;
-    font-weight: $norm;
     line-height: 108px;
     text-align: center;
   }
 
   &__subtitle {
+    font: $norm 50px $bigNoodleTitling;
     color: $white;
-    font-family: $bigNoodleTitling;
-    font-size: 50px;
-    font-weight: $norm;
     text-align: center;
   }
 
   &__find_tours {
-    display: block;
+    @include crcl_button(156px,$blue,$sans,$white,16px,$bold);
     margin: 0 auto;
-    width: 156px;
-    height: 156px;
-    background-color: $blue;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 156px;
-    color: $white;
-    font-family: $sans;
-    font-size: 16px;
-    font-weight: $bold;
-    text-transform: uppercase;
-    text-decoration: none;
   }
 }

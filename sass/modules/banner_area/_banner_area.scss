@@ -1,18 +1,13 @@
 .banner_area {
-  background-image: url('../../images/banner_area.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  @include bg_image('banner_area.jpg');
   height: 934px;
   margin: 0 auto;
   position: relative;
   padding-top: 302px;
 
   &__title {
+    font: $norm 62px $bigNoodleTitling;
     color: $white;
-    font-family: $bigNoodleTitling;
-    font-size: 62px;
-    font-weight: $norm;
     margin: 0 0 30px 0;
     text-transform: uppercase;
   }
@@ -20,20 +15,16 @@
   &__main_text {
     margin: 0 0 0 90px;
     width: 494px;
+    font: $norm 30px $sans;
     color: white;
-    font-family: $sans;
-    font-size: 30px;
-    font-weight: $norm;
     position: relative;
   }
 
   &__text {
     margin: 72px 0 0 23px;
     width: 567px;
+    font: $norm 20px $sans;
     color: $white;
-    font-family: $sans;
-    font-size: 20px;
-    font-weight: $norm;
     position: relative;
   }
 

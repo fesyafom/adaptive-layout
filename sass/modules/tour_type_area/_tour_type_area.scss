@@ -1,25 +1,18 @@
 .tour_type_area {
-  background-image: url('../../images/tour_type_area.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  @include bg_image('tour_type_area.jpg');
   height: 707px;
   margin: 0 auto;
 
   &__title {
+    font: $norm 50px $bigNoodleTitling;
     color: $gray;
-    font-family: $bigNoodleTitling;
-    font-size: 50px;
-    font-weight: $norm;
     text-align: center;
     margin: 110px 100px 45px 100px;
   }
 
   &__text {
+    font: $norm 20px $sans;
     color: $gray;
-    font-family: $sans;
-    font-size: 20px;
-    font-weight: $norm;
     text-align: center;
     margin: 0 100px 68px 100px;
   }
@@ -46,10 +39,8 @@
       }
 
       &__title {
+        font: $norm 34px $bigNoodleTitling;
         color: $white;
-        font-family: $bigNoodleTitling;
-        font-size: 34px;
-        font-weight: $norm;
         line-height: 266px;
         text-align: center;
         position: absolute;

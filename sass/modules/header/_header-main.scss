@@ -28,10 +28,8 @@
 
     &-item {
       float: left;
+      font: $norm 14px $sans;
       color: $white;
-      font-family: $sans;
-      font-size: 14px;
-      font-weight: $norm;
       list-style-type: none;
       margin-right: 47px;
     }
@@ -50,10 +48,8 @@
 
     &-item {
       float: left;
+      font: $norm 14px $sans;
       color: $white;
-      font-family: $sans;
-      font-size: 14px;
-      font-weight: $norm;
       list-style-type: none;
       margin-right: 47px;
     }
@@ -66,9 +62,8 @@
 
   &-search {
     float: right;
+    font: $norm 14px $sans;
     color: $white;
-    font-size: 14px;
-    font-weight: $norm;
     padding: 8px 39px;
     border-left: 1px solid rgba(61,65,71,.42);
 
