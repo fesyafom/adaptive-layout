@@ -1,7 +1,6 @@
 var toggleSearchForm = document.getElementById("toggleSearchForm");
 var toggleMenu = document.getElementById("toggleMenu");
-var sliderPrev = document.getElementById("sliderPrev");
-var sliderNext = document.getElementById("sliderNext");
+
 
 toggleSearchForm.onclick = function(event) {
     var searchTours = document.getElementById("searchTours");
@@ -19,9 +18,6 @@ toggleMenu.onclick = function(event) {
     return false;
 };
 
-sliderPrev.onclick = function(event) {
-    var slider = document.getElementById("slider");
-    slider.style.marginLeft -= 373;
-    console.log(slider.style.marginLeft);
-    return false;
-};
+
+
+

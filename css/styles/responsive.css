@@ -8,6 +8,7 @@
     .container {
         width: 950px;
     }
+
     .find_trip_area-list {
         width: 1100px;
     }
@@ -63,6 +64,11 @@
 @media screen and (max-width: 992px) and (min-width: 769px) {
     .container {
         width: 720px;
+    }
+
+    .button_left,
+    .button_right {
+        display: block;
     }
 
     .search_tours {
@@ -153,6 +159,11 @@
 @media screen and (max-width: 768px) and (min-width: 480px) {
     .container {
         width: 430px;
+    }
+
+    .button_left,
+    .button_right {
+        display: block;
     }
 
     .search_tours {
@@ -280,6 +291,11 @@
 @media screen and (max-width: 479px) and (min-width: 320px) {
     .container {
         width: 270px;
+    }
+
+    .button_left,
+    .button_right {
+        display: block;
     }
 
     .search_tours {

@@ -20,6 +20,7 @@
     box-sizing: border-box;
     text-align: center;
     left: 0;
+    display: none;
 }
 
 .button_right {
@@ -33,6 +34,7 @@
     box-sizing: border-box;
     text-align: center;
     right: 0;
+    display: none;
 }
 
 .slider {
