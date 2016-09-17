@@ -8,12 +8,13 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/styles/fonts.css">
     <link rel="stylesheet" href="css/styles/main.css">
+    <link rel="stylesheet" href="css/styles/responsive.css">
 </head>
 <body>
 
 <header class="header">
     <article class="header-main">
-        <div class="container">
+        <div class="container clearfix">
             <ul class="header-contacts">
                 <li class="header-contacts-item">
                     <i class="fa fa-phone" aria-hidden="true"></i>
@@ -53,10 +54,12 @@
         </div>
     </article>
     <article class="header-nav">
-        <div class="container">
-            <a class="logo" href="#"><img src="images/logo.png"></a>
+        <div class="container clearfix">
+            <a class="logo" href="#"><img class="logo__img" src="images/logo.png"></a>
 
-            <nav class="navigation">
+            <button class="navigation__button" id="toggleMenu">Menu <i class="fa fa-bars" aria-hidden="true"></i></button>
+
+            <nav class="navigation" id="navigation">
                 <a class="navigation__link" href="#">Home</a>
                 <a class="navigation__link" href="#">Blog</a>
                 <a class="navigation__link" href="#">Gallery</a>
@@ -137,38 +140,45 @@
     <div class="container">
         <h2 class="deals_and_discounts__title">Deals and Discounts</h2>
 
-        <ul class="deals_and_discounts-list">
-            <li class="deals_and_discounts-list-item">
-                <img class="deals_and_discounts-list-item__img" src="images/surfing_1.jpg">
-                <h5 class="deals_and_discounts-list-item__title">Surfing</h5>
-                <p class="deals_and_discounts-list-item__text">Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec! Phasellus aliquam odio. </p>
-                <a class="deals_and_discounts-list-item__button" href="#"><span class="deals_and_discounts-list-item__button__title">Book Now</span></a>
-                <div class="deals_and_discounts-list-item__prise"><span class="old_prise">$899</span><span class="prise">$499</span></div>
-            </li>
-            <li class="deals_and_discounts-list-item">
-                <img class="deals_and_discounts-list-item__img" src="images/surfing_2.jpg">
-                <h5 class="deals_and_discounts-list-item__title">Surfing</h5>
-                <p class="deals_and_discounts-list-item__text">Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec! Phasellus aliquam odio. </p>
-                <a class="deals_and_discounts-list-item__button" href="#"><span class="deals_and_discounts-list-item__button__title">Book Now</span></a>
-                <div class="deals_and_discounts-list-item__prise"><span class="old_prise">$899</span><span class="prise">$499</span></div>
-            </li>
-            <li class="deals_and_discounts-list-item">
-                <img class="deals_and_discounts-list-item__img" src="images/surfing_3.jpg">
-                <h5 class="deals_and_discounts-list-item__title">Surfing</h5>
-                <p class="deals_and_discounts-list-item__text">Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec! Phasellus aliquam odio. </p>
-                <a class="deals_and_discounts-list-item__button" href="#"><span class="deals_and_discounts-list-item__button__title">Book Now</span></a>
-                <div class="deals_and_discounts-list-item__prise"><span class="old_prise">$899</span><span class="prise">$499</span></div>
-            </li>
+        <a class="button_left" id="sliderPrev" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
 
-        </ul>
+        <div class="slider">
+            <ul class="deals_and_discounts-list" id="slider">
+                <li class="deals_and_discounts-list-item">
+                    <img class="deals_and_discounts-list-item__img" src="images/surfing_1.jpg">
+                    <h5 class="deals_and_discounts-list-item__title">Surfing</h5>
+                    <p class="deals_and_discounts-list-item__text">Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec! Phasellus aliquam odio. </p>
+                    <a class="deals_and_discounts-list-item__button" href="#"><span class="deals_and_discounts-list-item__button__title">Book Now</span></a>
+                    <div class="deals_and_discounts-list-item__prise"><span class="old_prise">$899</span><span class="prise">$499</span></div>
+                </li>
+                <li class="deals_and_discounts-list-item">
+                    <img class="deals_and_discounts-list-item__img" src="images/surfing_2.jpg">
+                    <h5 class="deals_and_discounts-list-item__title">Surfing</h5>
+                    <p class="deals_and_discounts-list-item__text">Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec! Phasellus aliquam odio. </p>
+                    <a class="deals_and_discounts-list-item__button" href="#"><span class="deals_and_discounts-list-item__button__title">Book Now</span></a>
+                    <div class="deals_and_discounts-list-item__prise"><span class="old_prise">$899</span><span class="prise">$499</span></div>
+                </li>
+                <li class="deals_and_discounts-list-item">
+                    <img class="deals_and_discounts-list-item__img" src="images/surfing_3.jpg">
+                    <h5 class="deals_and_discounts-list-item__title">Surfing</h5>
+                    <p class="deals_and_discounts-list-item__text">Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec! Phasellus aliquam odio. </p>
+                    <a class="deals_and_discounts-list-item__button" href="#"><span class="deals_and_discounts-list-item__button__title">Book Now</span></a>
+                    <div class="deals_and_discounts-list-item__prise"><span class="old_prise">$899</span><span class="prise">$499</span></div>
+                </li>
+
+            </ul>
+        </div>
+
+        <a class="button_right" id="sliderNext" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+
     </div>
 
 </section>
 
-<section class="find_trip_area">
+<section class="find_trip_area clearfix">
     <h2 class="find_trip_area__title">Find a Tour by Beautiful Trips</h2>
 
-    <ul class="find_trip_area-list">
+    <ul class="find_trip_area-list clearfix">
         <li class="find_trip_area-list-item">
             <img class="find_trip_area-list-item__img" src="images/trip_1.jpg">
             <h6 class="find_trip_area-list-item__title">promotional trip</h6>
@@ -204,7 +214,7 @@
 </section>
 
 
-<section class="news_area">
+<section class="news_area clearfix">
     <div class="container">
         <h2 class="news_area__title">News & Events</h2>
         <p class="news_area__text">Egestas dignissim a enim lorem a mus egestas risus porta? Sed. Scelerisque, in nec velit augue aenean a, vut velit nec! Phasellus aliquam odio.</p>
@@ -246,14 +256,14 @@
     </div>
 </section>
 
-<section class="bottom_banner">
+<section class="bottom_banner clearfix">
     <h1 class="bottom_banner__title">Luxury Travel</h1>
     <h2 class="bottom_banner__subtitle">Peace of Mind guaranteed!</h2>
     <a class="bottom_banner__find_tours" href="#">Find Tours</a>
 </section>
 
 <section class="about_company">
-    <div class="container">
+    <div class="container clearfix">
         <article class="about_company-find_finder">
             <h2 class="about_company__title">Findfinder LLC</h2>
             <p class="about_company__contacts">1400 Pennsylvania Ave. Washington, DC</p>

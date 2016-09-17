@@ -1,8 +1,47 @@
 .container {
     width: 1170px;
     margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.button_left {
+    color: black;
+    height: 587px;
+    width: 20%;
+    position: absolute;
+    z-index: 20;
+    top: 252px;
+    padding-top: 293px;
+    box-sizing: border-box;
+    text-align: center;
+    left: 0;
+}
+
+.button_right {
+    color: black;
+    height: 587px;
+    width: 20%;
+    position: absolute;
+    z-index: 20;
+    top: 252px;
+    padding-top: 293px;
+    box-sizing: border-box;
+    text-align: center;
+    right: 0;
+}
+
+.slider {
+    width: 100%;
+    margin: 0 auto;
     overflow: hidden;
 }
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .header {
     position: fixed;
@@ -111,6 +150,21 @@
     color: white;
 }
 
+.navigation__button {
+    float: right;
+    box-sizing: border-box;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    border-style: hidden;
+    cursor: pointer;
+    margin-top: 17px;
+    display: none;
+}
+
 .search_tours {
     box-sizing: border-box;
     position: fixed;
@@ -143,7 +197,7 @@
 }
 
 .search_tours-block {
-    width: 425px;
+    width: 100%;
     height: 55px;
     background-color: rgb(242, 242, 242);
     border-radius: 5px;
@@ -159,7 +213,7 @@
     box-sizing: border-box;
     float: left;
     line-height: 45px;
-    width: 376px;
+    width: 89%;
     height: 55px;
     background-color: rgba(255,255,255,0);
     text-indent: 14px;
@@ -177,7 +231,7 @@
 
 .search_tours__submit {
     box-sizing: border-box;
-    width: 425px;
+    width: 100%;
     height: 55px;
     background-color: rgb(0, 111, 230);
     border-radius: 5px;
@@ -201,6 +255,7 @@
     height: 934px;
     margin: 0 auto;
     position: relative;
+    padding-top: 302px;
 }
 
 .banner_area__title {
@@ -208,7 +263,7 @@
     font-family: 'BigNoodleTitling',Sans-Serif;
     font-size: 62px;
     font-weight: 400;
-    margin: 302px 0 30px 0;
+    margin: 0 0 30px 0;
     text-transform: uppercase;
 }
 
@@ -270,6 +325,7 @@
 .tour_type_area-list {
     overflow: hidden;
     padding:0;
+    margin: 0 auto;
 }
 
 .tour_type_area-list-item {
@@ -281,7 +337,7 @@
     list-style-type: none;
     overflow: hidden;
     background-color: black;
-    margin: 0 13px;
+    margin: 13px;
     position: relative;
 }
 
@@ -312,6 +368,7 @@
     height: 880px;
     margin: 0 auto;
     position: relative;
+    padding-top: 118px;
 }
 
 .deals_and_discounts__title {
@@ -320,12 +377,13 @@
     font-size: 50px;
     font-weight: 400;
     text-align: center;
-    margin: 118px 0 77px 0;
+    margin: 0 0 77px 0;
 }
 
 .deals_and_discounts-list {
     overflow: hidden;
     padding:0;
+    margin: 0 auto;
 }
 
 .deals_and_discounts-list-item {
@@ -388,7 +446,9 @@
     background-color: rgb(71, 160, 255);
     position: absolute;
     top: 245px;
-    left: 102px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -410,8 +470,7 @@
 }
 
 .find_trip_area {
-    height: 1076px;
-    overflow: hidden;
+
 }
 
 .find_trip_area__title {
@@ -426,7 +485,8 @@
 
 .find_trip_area-list {
     padding: 0;
-    overflow: hidden;
+    width: 1593px;
+    margin: 0 auto;
 }
 
 .find_trip_area-list-item {
@@ -440,7 +500,8 @@
 }
 
 .find_trip_area-list-item__img {
-
+    width: 100%;
+    height: 100%;
 }
 
 .find_trip_area-list-item__title {
@@ -497,7 +558,7 @@
 .news_area {
     height: 905px;
     background-color: white;
-    padding-top: 1px;
+    padding-top: 100px;
 }
 
 .news_area__title {
@@ -507,7 +568,7 @@
     font-weight: 400;
     text-align: center;
     letter-spacing: 2px;
-    margin: 100px 0 50px 0;
+    margin: 0 0 50px 0;
 }
 
 .news_area__text {
@@ -586,11 +647,12 @@
     background-size: cover;
     height: 800px;
     margin: 0 auto;
-    padding-top: 1px;
+    box-sizing: border-box;
+    padding-top: 200px;
 }
 
 .bottom_banner__title {
-    margin: 200px 0 26px 0;
+    margin: 0 0 26px 0;
     color: white;
     font-family: 'BigNoodleTitling',Sans-Serif;
     font-size: 148px;
@@ -630,7 +692,7 @@
 
 .about_company-find_finder {
     box-sizing: border-box;
-    width: 362px;
+    width: 31%;
     float:left;
     padding: 11px;
 }
@@ -645,20 +707,20 @@
 
 .about_company-support {
     box-sizing: border-box;
-    width: 235px;
+    width: 20%;
     float:left;
     padding: 11px;
 }
 
 .about_company-follow {
     box-sizing: border-box;
-    width: 293px;
+    width: 25%;
     float:left;
     padding: 11px;
 }
 .about_company-newsletter {
     box-sizing: border-box;
-    width: 272px;
+    width: 24%;
     float:left;
     padding: 11px;
 }
@@ -706,7 +768,7 @@
     background-color: rgb(242, 242, 242);
     border-radius: 5px;
     height: 55px;
-    width: 274px;
+    width: 100%;
     padding: 5px;
 }
 
@@ -719,7 +781,7 @@
     font-size: 13px;
     font-weight: 400;
     line-height: 45px;
-    width: 188px;
+    width: 67%;
     height: 45px;
     background-color: rgba(255,255,255,0);
     text-indent: 14px;
@@ -729,7 +791,7 @@
 .about_company-subscription__submit {
     box-sizing: border-box;
     float:right;
-    width: 76px;
+    width: 28%;
     height: 45px;
     background-color: rgb(0, 111, 230);
     border-radius: 5px;
