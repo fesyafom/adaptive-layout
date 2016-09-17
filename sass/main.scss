@@ -1,0 +1,25 @@
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@import 'helpers/variables';
+
+@import 'modules/header/_header-main';
+@import 'modules/header/_header-nav';
+@import 'modules/search_tours/_search_tours';
+@import 'modules/banner_area/_banner_area';
+@import 'modules/tour_type_area/_tour_type_area';
+@import 'modules/deals_and_discounts/_slider';
+@import 'modules/deals_and_discounts/_deals_and_discounts';
+@import 'modules/find_trip_area/_find_trip_area';
+@import 'modules/news_area/_news_area';
+@import 'modules/bottom_banner/_bottom_banner';
+@import 'modules/about_company/_about_company';
+@import 'modules/footer/_footer';

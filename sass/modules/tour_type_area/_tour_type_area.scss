@@ -1,0 +1,64 @@
+.tour_type_area {
+  background-image: url('../../images/tour_type_area.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 707px;
+  margin: 0 auto;
+
+  &__title {
+    color: $gray;
+    font-family: $bigNoodleTitling;
+    font-size: 50px;
+    font-weight: $norm;
+    text-align: center;
+    margin: 110px 100px 45px 100px;
+  }
+
+  &__text {
+    color: $gray;
+    font-family: $sans;
+    font-size: 20px;
+    font-weight: $norm;
+    text-align: center;
+    margin: 0 100px 68px 100px;
+  }
+
+  &-list {
+    overflow: hidden;
+    padding:0;
+    margin: 0 auto;
+
+    &-item {
+      box-sizing: border-box;
+      width: 266px;
+      height:266px;
+      border-radius: 50%;
+      float: left;
+      list-style-type: none;
+      overflow: hidden;
+      background-color: $black;
+      margin: 13px;
+      position: relative;
+
+      &__img {
+        opacity: .6;
+      }
+
+      &__title {
+        color: $white;
+        font-family: $bigNoodleTitling;
+        font-size: 34px;
+        font-weight: $norm;
+        line-height: 266px;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+      }
+    }
+  }
+}

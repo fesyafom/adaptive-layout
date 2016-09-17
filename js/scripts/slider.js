@@ -1,6 +1,5 @@
 var sliderPrev = document.getElementById("sliderPrev");
 var sliderNext = document.getElementById("sliderNext");
-var lis = document.getElementsByClassName('deals_and_discounts-list-item');
 
 var carousel = document.getElementById('slider');
 var list = carousel.querySelector('ul');

@@ -1,0 +1,118 @@
+.about_company {
+  height: 332px;
+
+  &-find_finder {
+    box-sizing: border-box;
+    width: 31%;
+    float:left;
+    padding: 11px;
+  }
+
+  &__title {
+    color: $gray;
+    font-family: $bigNoodleTitling;
+    font-size: 30px;
+    font-weight: $norm;
+    margin: 77px 0 47px 0;
+  }
+
+  &-support {
+    box-sizing: border-box;
+    width: 20%;
+    float:left;
+    padding: 11px;
+  }
+
+  &-follow {
+    box-sizing: border-box;
+    width: 25%;
+    float:left;
+    padding: 11px;
+  }
+
+  &-newsletter {
+    box-sizing: border-box;
+    width: 24%;
+    float:left;
+    padding: 11px;
+  }
+
+  &__contacts {
+    color: $gray;
+    font-family: $sans;
+    font-size: 15px;
+    font-weight: $norm;
+    margin-bottom: 13px;
+  }
+
+  &__more_info {
+    color: $gray;
+    font-family: $sans;
+    font-size: 15px;
+    font-weight: $norm;
+    margin-bottom: 13px;
+    display: block;
+    text-decoration: none;
+  }
+
+  &__social {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    list-style-type: none;
+    background-color: $blue;
+    text-align: center;
+    line-height: 44px;
+    text-decoration: none;
+    color: $white;
+    font-family: $bigNoodleTitling;
+    font-size: 16px;
+    font-weight: $norm;
+    display: block;
+    float: left;
+    margin: 0 11px 11px 0;
+  }
+
+  &-subscription {
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: $cream;
+    border-radius: 5px;
+    height: 55px;
+    width: 100%;
+    padding: 5px;
+
+    &__email {
+      border: 0;
+      box-sizing: border-box;
+      float: left;
+      color: $gray;
+      font-family: $sans;
+      font-size: 13px;
+      font-weight: $norm;
+      line-height: 45px;
+      width: 67%;
+      height: 45px;
+      background-color: inherit;
+      text-indent: 14px;
+    }
+
+    &__submit {
+      box-sizing: border-box;
+      float:right;
+      width: 28%;
+      height: 45px;
+      background-color: $dark_blue;
+      border-radius: 5px;
+      text-transform: uppercase;
+      color: $white;
+      font-family: $sans;
+      font-size: 14px;
+      font-weight: $bold;
+      line-height: 45px;
+      padding: 0;
+      border-style: hidden;
+      cursor: pointer;
+    }
+  }
+}

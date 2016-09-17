@@ -1,0 +1,108 @@
+.deals_and_discounts {
+  background-image: url('../../images/deals_and_discounts.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 880px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 118px;
+
+  &__title {
+    color: $white;
+    font-family: $bigNoodleTitling;
+    font-size: 50px;
+    font-weight: $norm;
+    text-align: center;
+    margin: 0 0 77px 0;
+  }
+
+  &-list {
+    overflow: hidden;
+    padding:0;
+    margin: 0 auto;
+
+    &-item {
+      height: 587px;
+      width: 373px;
+      box-sizing: border-box;
+      float: left;
+      list-style-type: none;
+      margin: 0 8px;
+      position: relative;
+      background-color: $white;
+
+      &__img {
+        height: 274px;
+      }
+
+      &__title {
+        color: $gray;
+        font-family: $bigNoodleTitling;
+        font-size: 50px;
+        font-weight: $norm;
+        text-align: center;
+        margin: 54px 0 26px 0;
+        line-height: 38px;
+      }
+
+      &__text {
+        color: $gray;
+        font-family: $sans;
+        font-size: 15px;
+        font-weight: $norm;
+        margin: 0 16px 40px 44px;
+      }
+
+      &__button {
+        display: block;
+        width: 199px;
+        height: 55px;
+        background-color: $dark_blue;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        margin: 0 auto;
+
+        &__title {
+          color: $white;
+          font-family: $sans;
+          font-size: 16px;
+          font-weight: $bold;
+          line-height: 55px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+      }
+
+      &__prise {
+        width: 169px;
+        height: 56px;
+        background-color: $blue;
+        position: absolute;
+        top: 245px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.prise {
+  color: $white;
+  font-family: $bigNoodleTitling;
+  font-weight: $norm;
+  font-size: 37px;
+  line-height: 56px;
+}
+
+.old_prise {
+  color: $white;
+  font-family: $bigNoodleTitling;
+  font-weight: $norm;
+  font-size: 30px;
+  text-decoration: line-through;
+  margin-right: 15px;
+}

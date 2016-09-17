@@ -1,0 +1,33 @@
+.button_left {
+  color: $black;
+  height: 587px;
+  width: 20%;
+  position: absolute;
+  z-index: 20;
+  top: 252px;
+  padding-top: 293px;
+  box-sizing: border-box;
+  text-align: center;
+  left: 0;
+  display: none;
+}
+
+.button_right {
+  color: $black;
+  height: 587px;
+  width: 20%;
+  position: absolute;
+  z-index: 20;
+  top: 252px;
+  padding-top: 293px;
+  box-sizing: border-box;
+  text-align: center;
+  right: 0;
+  display: none;
+}
+
+.slider {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}

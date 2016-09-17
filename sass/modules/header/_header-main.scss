@@ -1,0 +1,81 @@
+.header {
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  top: -120px;
+  transition: top 0.5s ease-out 0.1s;
+
+  &:hover {
+    top: 0;
+  }
+
+  &__show {
+    height: 200px;
+    opacity: 0;
+  }
+
+  &-main {
+    background-color: rgba(0,0,0,.75);
+    height: 31px;
+    border-bottom: 1px solid rgba(61,65,71,.42);
+  }
+
+  &-contacts {
+    float: left;
+    margin: 8px 0;
+    padding: 0;
+    overflow: hidden;
+
+    &-item {
+      float: left;
+      color: $white;
+      font-family: $sans;
+      font-size: 14px;
+      font-weight: $norm;
+      list-style-type: none;
+      margin-right: 47px;
+    }
+
+    &__link {
+      color: inherit;
+      text-decoration: none;
+      margin-left: 11px;
+    }
+  }
+  &-social {
+    float: right;
+    margin: 8px 0;
+    padding: 0;
+    overflow: hidden;
+
+    &-item {
+      float: left;
+      color: $white;
+      font-family: $sans;
+      font-size: 14px;
+      font-weight: $norm;
+      list-style-type: none;
+      margin-right: 47px;
+    }
+
+    &__link {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  &-search {
+    float: right;
+    color: $white;
+    font-size: 14px;
+    font-weight: $norm;
+    padding: 8px 39px;
+    border-left: 1px solid rgba(61,65,71,.42);
+
+    &__link {
+      color: inherit;
+    }
+  }
+}
+
+

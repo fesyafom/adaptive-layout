@@ -1,0 +1,45 @@
+.bottom_banner {
+  background-image: url('../../images/bottom-banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: 200px;
+
+  &__title {
+    margin: 0 0 26px 0;
+    color: $white;
+    font-family: $bigNoodleTitling;
+    font-size: 148px;
+    font-weight: $norm;
+    line-height: 108px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    color: $white;
+    font-family: $bigNoodleTitling;
+    font-size: 50px;
+    font-weight: $norm;
+    text-align: center;
+  }
+
+  &__find_tours {
+    display: block;
+    margin: 0 auto;
+    width: 156px;
+    height: 156px;
+    background-color: $blue;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 156px;
+    color: $white;
+    font-family: $sans;
+    font-size: 16px;
+    font-weight: $bold;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}

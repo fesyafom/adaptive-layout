@@ -1,0 +1,47 @@
+.banner_area {
+  background-image: url('../../images/banner_area.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 934px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 302px;
+
+  &__title {
+    color: $white;
+    font-family: $bigNoodleTitling;
+    font-size: 62px;
+    font-weight: $norm;
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+  }
+
+  &__main_text {
+    margin: 0 0 0 90px;
+    width: 494px;
+    color: white;
+    font-family: $sans;
+    font-size: 30px;
+    font-weight: $norm;
+    position: relative;
+  }
+
+  &__text {
+    margin: 72px 0 0 23px;
+    width: 567px;
+    color: $white;
+    font-family: $sans;
+    font-size: 20px;
+    font-weight: $norm;
+    position: relative;
+  }
+
+  &__bottom {
+    position: absolute;
+    bottom: 0;
+    height: 204px;
+    width: 100%;
+    background-color: rgba(71, 160, 255,.85);
+  }
+}

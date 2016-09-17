@@ -1,0 +1,81 @@
+.search_tours {
+  box-sizing: border-box;
+  position: fixed;
+  top: 215px;
+  right: 226px;
+  height: 600px;
+  width: 509px;
+  background-color: white;
+  z-index: 20;
+  padding: 40px;
+
+  &__title {
+    color: $gray;
+    font-family: $bigNoodleTitling;
+    font-size: 70px;
+    font-weight: $norm;
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+
+  &__text {
+    color: $gray;
+    font-family: $sans;
+    font-size: 20px;
+    font-weight: $norm;
+    margin: 0 0 27px 0;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  &-block {
+    width: 100%;
+    height: 55px;
+    background-color: $cream;
+    border-radius: 5px;
+    margin-bottom: 23px;
+
+    &__input {
+      color: $gray;
+      font-family: $sans;
+      font-size: 16px;
+      font-weight: $norm;
+      border: 0;
+      box-sizing: border-box;
+      float: left;
+      line-height: 45px;
+      width: 89%;
+      height: 55px;
+      background-color: inherit;
+      text-indent: 14px;
+    }
+
+    &__icon {
+      display: block;
+      float: left;
+      color: $gray;
+      font-family: $bigNoodleTitling;
+      font-size: 20px;
+      font-weight: $norm;
+      line-height: 55px;
+    }
+  }
+
+  &__submit {
+    box-sizing: border-box;
+    width: 100%;
+    height: 55px;
+    background-color: $blue;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: $white;
+    font-family: $sans;
+    font-size: 16px;
+    font-weight: $bold;
+    line-height: 55px;
+    padding: 0;
+    border-style: hidden;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+}
