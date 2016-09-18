@@ -1,17 +1,7 @@
-.container {
-  width: 1170px;
-  margin: 0 auto;
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 @import 'helpers/variables';
 @import 'helpers/mixins';
 
+@import 'modules/container/_container';
 @import 'modules/header/_header-main';
 @import 'modules/header/_header-nav';
 @import 'modules/search_tours/_search_tours';
@@ -24,3 +14,6 @@
 @import 'modules/bottom_banner/_bottom_banner';
 @import 'modules/about_company/_about_company';
 @import 'modules/footer/_footer';
+
+
+

@@ -21,10 +21,95 @@
   }
 
   &__button {
-    @include rect_button(41px,$black,$sans,$white,18px,$norm);
+    @include rect_button(41px,$black,$sans,$white,18px,$bold);
     width: 93px;
     float: right;
     margin-top: 17px;
     display: none;
+  }
+}
+
+@media screen and (max-width: 1700px) and (min-width: 1201px) {
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 993px) {
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  .navigation {
+    position: absolute;
+    top: 80px;
+    right: 15px;
+    z-index: 20;
+    text-align: left;
+    background-color: rgba(0,0,0,.75);
+    padding: 12px 17px;
+    display: none;
+
+    &__button {
+      display: block;
+    }
+
+    &__link {
+      display: block;
+      padding: 2px;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .navigation {
+    position: absolute;
+    top: 155px;
+    right: 15px;
+    z-index: 20;
+    text-align: left;
+    background-color: rgba(0,0,0,.75);
+    padding: 12px 17px;
+    display: none;
+
+    &__button {
+      display: block;
+    }
+
+    &__link {
+      display: block;
+      padding: 2px;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 479px) and (min-width: 320px) {
+  .navigation {
+    position: absolute;
+    top: 155px;
+    right: 15px;
+    z-index: 20;
+    text-align: left;
+    background-color: rgba(0,0,0,.75);
+    padding: 12px 17px;
+    display: none;
+
+    &__button {
+      display: block;
+    }
+
+    &__link {
+      display: block;
+      padding: 2px;
+      margin: 0;
+    }
+  }
+
+  .logo {
+    margin: 17px 0;
+
+    &__img {
+      width: 150px;
+    }
   }
 }
