@@ -75,7 +75,17 @@
 
 
 @media screen and (max-width: 1700px) and (min-width: 1201px) {
-
+  .news_area {
+    &-list {
+      &-item {
+        &-author {
+          &__info {
+            margin-right: 23px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 993px) {

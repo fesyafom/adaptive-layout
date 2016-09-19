@@ -83,7 +83,13 @@
 
 
 @media screen and (max-width: 1700px) and (min-width: 1201px) {
-
+  .deals_and_discounts {
+    &-list {
+      &-item {
+        height: 600px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 993px) {
